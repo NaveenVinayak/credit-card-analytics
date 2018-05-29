@@ -27,8 +27,7 @@ The main purpose of this application:
 
 
 *************************************************
-* Spark version used : 2.2.0                    *
-* Scala version used : 2.11.12                  *
-*                                               *
-* Dependency used : Databricks CSV              *
+ Spark version used : 2.2.0                    
+ Scala version used : 2.11.12                  
+ Dependency used : Databricks CSV              
 *************************************************
