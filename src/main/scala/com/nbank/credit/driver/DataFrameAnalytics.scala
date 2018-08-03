@@ -7,7 +7,7 @@ import com.nbank.credit.utils.{CreditUtils, FileUtils}
 import org.apache.spark.sql.Row
 
 /**
-  * amit.dixit
+  * Naaveen
   *
   * Main executor class
   */
@@ -18,7 +18,6 @@ object DataFrameAnalytics extends ProjectConfig {
 
     /* Create local spark session */
     val sparkSession = SparkContextFactory.getSparkSession("local")
-
     /* Read the CSV file and create a temp view */
     FileUtils.readAsCSV(creditCardFile, sparkSession).createOrReplaceTempView(CreditUtils.creditCardsData)
 
@@ -40,7 +39,7 @@ object DataFrameAnalytics extends ProjectConfig {
     /*FInd out the no of married and unmarried count*/
     val noOfMarried= CreditUtils.noOfPeopleMarriedOrUnmarried(Constants.yes, sparkSession)
     val noofUnmarried=CreditUtils.noOfPeopleMarriedOrUnmarried(Constants.no, sparkSession)
-    println(noOfMarried)
+    println("married"+noOfMarried)
 
 
     /*Find out the count of people having 3+ dependents*/
